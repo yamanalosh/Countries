@@ -57,7 +57,7 @@ public class Main
     // Use its get method to get the its image file name and save it into imagefile variable below instead of worldmap.jpg.
     String imagefile = "worldmap.jpg";
     // Use the following code to create an new Image Icon and put it into the GUI
-    img = new ImageIcon("images/" + imagefile);
+    img = new ImageIcon(imagefile);
     imageLabel.setIcon(img);
   }
   
@@ -101,7 +101,7 @@ public Main() {
         jFrame.add(newButton);
         
         // create a new image icon
-        img = new ImageIcon("images/worldmap.jpg");
+        img = new ImageIcon("worldmap.jpg");
         // create a label to display image
         imageLabel = new JLabel(img);
         // and one for output
