@@ -29,7 +29,7 @@ public class Main
   public void loadCountries() 
   {
     // Open the data file - do not change
-    File file = new File("countries-data.csv");
+    File file = new File("/workspaces/Countries/workspace/countries-data.csv");
     Scanner scan = null;
     try {
       scan = new Scanner(file);
@@ -57,7 +57,7 @@ public class Main
     // Use its get method to get the its image file name and save it into imagefile variable below instead of worldmap.jpg.
     String imagefile = "worldmap.jpg";
     // Use the following code to create an new Image Icon and put it into the GUI
-    img = new ImageIcon(imagefile);
+    img = new ImageIcon("/workspaces/Countries/workspace/"+imagefile);
     imageLabel.setIcon(img);
   }
   
